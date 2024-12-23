@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -7,10 +7,10 @@ function Dashboard() {
       <p>This is the dashboard page</p>
       <ul>
         <li>
-          <a href="#profile">Profile for user 1004</a>
+          <NavLink to="profile/1004">Profile for user 1004</NavLink>
         </li>
         <li>
-          <a href="#settings">Settings</a>
+          <NavLink to="settings">Settings</NavLink>
         </li>
       </ul>
       {/* 자식 라우트 렌더링 영역 */}
